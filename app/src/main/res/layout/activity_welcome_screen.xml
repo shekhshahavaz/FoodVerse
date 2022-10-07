@@ -46,14 +46,17 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/metadata"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
         android:background="@drawable/blackbutton"
+
         android:text="Sign in"
         android:textColor="@color/white"
-        android:layout_marginTop="35dp"
-        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/metadata"
+        android:onClick="signin"
         />
 </androidx.constraintlayout.widget.ConstraintLayout>
